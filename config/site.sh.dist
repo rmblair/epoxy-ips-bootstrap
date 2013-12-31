@@ -9,3 +9,9 @@ PKGPUBLISHER=custom
 
 # IPS server with publisher set to $PKGPUBLISHER
 PKGSRVR=http://custom-server:10000/
+
+# shovel everything into private namespace rather than /usr
+PREFIX=/opt/$PKGPUBLISHER
+
+# fix up some environment with these new settings
+reset_configure_opts
