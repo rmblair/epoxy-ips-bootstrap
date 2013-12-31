@@ -1,6 +1,6 @@
 #!/bin/sh
 
-git clone \
+git clone --single-branch \
   https://github.com/omniti-labs/omnios-build --branch template \
   omnios-build
 
