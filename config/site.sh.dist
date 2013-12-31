@@ -1,0 +1,11 @@
+# a template of settings overriding what's normally in
+# omnios-build/lib/site.sh
+# there will probably be extras beyond PKGPUBLISHER and PKGSRVR
+# as more things are packaged
+
+# this will effect the file system prefix (/opt/$PKGPUBLISHER, where possible) 
+# and the IPS publisher name
+PKGPUBLISHER=custom
+
+# IPS server with publisher set to $PKGPUBLISHER
+PKGSRVR=http://custom-server:10000/
