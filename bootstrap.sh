@@ -4,10 +4,9 @@ git clone --single-branch \
   https://github.com/omniti-labs/omnios-build --branch template \
   omnios-build
 
-#sooooon
-# git clone \
-#   https://github.com/...... --branch ..... \
-#   omnios-build/build
+git clone \
+  https://github.com/rmblair/epoxy-ips --branch master \
+  omnios-build/build
 
 # if we have a customized site.sh -- note this is in .gitignore
 if [ -f config/site.sh ]; then
