@@ -65,3 +65,10 @@ generate_localmog() {
   done
 
 }
+
+# shorten a version number to only the first major/minor version
+# ex: 1.7.9 -> 1.7
+# $1 - version number to shorten
+shorten_to_majmin() {
+  echo $1 | awk -F. 'BEGIN{OFS="."}{print $1,$2}'
+}
