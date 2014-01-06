@@ -7,6 +7,10 @@
 # and the IPS publisher name
 PKGPUBLISHER=custom
 
+# this will be prepended to $PKG so that we have a name we can latch
+# onto for dependencies without having to explicitly refer to the publisher
+PKGNAMESPACE=$PKGPUBLISHER
+
 # IPS server with publisher set to $PKGPUBLISHER
 PKGSRVR=http://custom-server:10000/
 
